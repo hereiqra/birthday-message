@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday, My Love</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      color: #333;
+      padding: 20px;
+      margin: 0;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    h1 {
+      color: #ff6347;
+    }
+    .story-section {
+      margin: 20px 0;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.6s ease-in-out;
+    }
+    .story-section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .story-section h2 {
+      color: #007bff;
+    }
+    .story-section p {
+      margin: 10px 0;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Happy Birthday, My Love!</h1>
+
+    <div class="story-section" id="section1">
+      <h2>🌐 The Beginning: Our Online Connection</h2>
+      <p>It all started with a simple message, just two strangers on the internet. Who knew that an online chat would lead to something so special?</p>
+    </div>
+
+    <div class="story-section" id="section2">
+      <h2>👫 Our First Meetings: Friends to Lovers</h2>
+      <p>Meeting you in person for the first time was magical. We were just friends, but there was something more.</p>
+    </div>
+
+    <div class="story-section" id="section3">
+      <h2>💋 The First Kiss: Sealing Our Love</h2>
+      <p>Our first kiss was a moment I'll never forget. It was the moment when everything fell into place, and I knew you were the one.</p>
+    </div>
+
+    <div class="story-section" id="section4">
+      <h2>📞 Long Distance: The Challenges We Faced</h2>
+      <p>Being apart was hard. There were times when we felt the distance, cried over video calls, and got frustrated by the lack of time.</p>
+    </div>
+
+    <div class="story-section" id="section5">
+      <h2>💕 Together Forever: Overcoming It All</h2>
+      <p>Despite the ups and downs, we've come out stronger. We've proven that love can conquer all, and here we are, still together, more in love than ever.</p>
+    </div>
+
+    <p>With all my love, <br> [Your Name]</p>
+  </div>
+
+  <script>
+    // Function to show the sections one by one with a delay
+    function showSections() {
+      const sections = document.querySelectorAll('.story-section');
+      sections.forEach((section, index) => {
+        setTimeout(() => {
+          section.classList.add('visible');
+        }, index * 1000);
+      });
+    }
+
+    // Run the function when the page loads
+    window.onload = showSections;
+  </script>
+</body>
+</html>
